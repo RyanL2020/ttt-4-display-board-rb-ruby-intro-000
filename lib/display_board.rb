@@ -1,18 +1,10 @@
-def display_board
-  puts "   |   |   "
-  puts "-----------"
-  puts "   |   |   "
-  puts "-----------"
-  puts "   |   |   "
+def display_board(board)
+separator = "|"
+lines = "-----------"
+
+puts " #{board[0]} #{separator} #{board[1]} #{separator} #{board[2]} "
+puts "#{lines}"
+puts " #{board[3]} #{separator} #{board[4]} #{separator} #{board[5]} "
+puts "#{lines}"
+puts " #{board[6]} #{separator} #{board[7]} #{separator} #{board[8]} "
 end
-board[0,1,2,3,4,5,6,7,8,9] = "X"
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-board = ["O", " ", " ", " ", " ", " ", " ", " ", " "]
-board = ["O", " ", " ", " ", "X", " ", " ", " ", " "]
-board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
-board = [" ", " ", " ", " ", " ", " ", "O", "O", "O"]
-board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
-board = [" ", " ", "O", " ", "O", " ", "O", " ", " "]
-board = ["X", "X", "X", "X", "O", "O", "X", "O", "O"]
-board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
